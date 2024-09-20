@@ -173,10 +173,23 @@ span{
 .box {
     /* border: 2px solid black; */
     height: 400px;
+    min-width: 250px;
     width: 23%;
     background-color: white;
     padding: 20px 0 15px;
     margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 45%; /* Adjusts for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 90%; /* Single-column layout for mobile */
+    }
 }
 
 .box-img {
@@ -228,6 +241,11 @@ ul a {
     font-size: 0.85rem;
     margin-top: 10px;
     color: #dddddd;
+}
+
+ul a:hover {
+    color: #ffffff; 
+    font-weight: 700;
 }
 
 .foot-panel3 {
